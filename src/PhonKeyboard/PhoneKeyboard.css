@@ -1,0 +1,212 @@
+/* PhoneKeyboard.css */
+
+/* Base styles */
+.phone-keyboard {
+    height: fit-content;
+    width: 100%;
+    max-height: 80vh;
+    /* Adjust the percentage as needed */
+    margin: 0 auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+
+.input-fieldP {
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    /* Adjust padding for touch targets */
+    font-size: 18px;
+}
+
+.input-fieldP input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    max-height: 100%;
+    /* Ensure input adapts to content height */
+}
+
+.input-fieldP button {
+    display: flex;
+    padding: 10px 13px;
+    margin-left: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    outline: none;
+}
+
+.keyboardP {
+    display: flex;
+    flex-wrap: wrap;
+    /* Allow keyboard buttons to wrap on smaller screens */
+    gap: 2px;
+}
+
+.keyboard-rowP {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.keyboardP button {
+    display: flex;
+    flex: 1;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+}
+
+/* Style specific keys differently */
+.keyboardP button.Backspace {
+    display: flex;
+    background-color: #080808;
+    color: #fff;
+}
+
+.tube {
+    background-color: #f50000;
+    color: #ffffff;
+    border-radius: 20%;
+}
+
+.keyboardP button.Clear {
+    display: flex;
+    background-color: #4caf50;
+    color: #fff;
+}
+
+/* Style the input field and buttons on focus */
+.input-fieldP input:focus,
+.input-fieldP button:focus,
+.keyboardP button:focus {
+    display: flex;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Media Query for smaller screens (e.g., mobile devices) */
+@media (max-width: 768px) {
+    .phone-keyboard {
+        height: fit-content;
+        padding: 4px;
+        max-height: 80vh;
+        /* Adjust the percentage as needed */
+        margin: 0 auto;
+        /* Center horizontally */
+    }
+
+
+    .input-fieldP {
+        font-size: 16px;
+    }
+
+    .input-fieldP input {
+        display: flex;
+        font-size: 14px;
+    }
+
+    .input-fieldP button {
+        display: flex;
+        font-size: 14px;
+    }
+
+    .keyboardP button {
+        display: flex;
+        font-size: 14px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 894px) {
+
+
+    .phone-keyboard {
+        height: fit-content;
+        padding: 3px;
+        max-height: 80vh;
+        /* Adjust the percentage as needed */
+
+        width: min-content;
+    }
+
+    .input-fieldP {
+        font-size: 16px;
+    }
+
+    .input-fieldP input {
+        display: flex;
+        font-size: 14px;
+    }
+
+    .input-fieldP button {
+        display: flex;
+        font-size: 14px;
+    }
+
+    .keyboardP button {
+        display: flex;
+        font-size: 16px;
+    }
+}
+
+
+
+
+
+@media (max-height: 741px) {
+
+
+    .phone-keyboard {
+        height: fit-content;
+        padding: 3px;
+        max-height: 80vh;
+        /* Adjust the percentage as needed */
+
+        width: min-content;
+    }
+
+    .input-fieldP {
+        font-size: 10px;
+    }
+
+    .input-fieldP input {
+        display: flex;
+        font-size: 9px;
+    }
+
+    .input-fieldP button {
+        display: flex;
+        font-size: 14px;
+    }
+
+    .keyboardP button {
+        display: flex;
+        font-size: 12px;
+        /* Adjust margin to change spacing between buttons */
+
+
+    }
+}
